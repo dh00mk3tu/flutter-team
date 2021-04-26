@@ -21,7 +21,8 @@ class _HomeScreenState extends State<HomeScreen> {
       
       decoration: BoxDecoration(
         color: Colors.grey[200],
-        borderRadius: BorderRadius.circular(30)
+        borderRadius: BorderRadius.circular(30),
+        boxShadow: shadowList
       ),
       transform: Matrix4.translationValues(xOffset, yOffset, 0)..scale(scaleFactor),
       // decoration: BoxDecoration(
@@ -29,7 +30,6 @@ class _HomeScreenState extends State<HomeScreen> {
       //   // boxShadow: shadowList
       // ),
       duration: Duration(milliseconds: 160),
-      // color: Colors.white,
 
       child: Column(
         children: [
